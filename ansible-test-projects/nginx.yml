@@ -1,8 +1,5 @@
 ---
 - hosts: localhost
-  vars:
-    become: yes
-    become_user: root
 
   tasks:
     - name: Installs nginx web server
