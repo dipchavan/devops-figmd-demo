@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   vars:
-    ansible_become_user: root
+    ansible_become_user: dipak
     ansible_become_pass: Reshma08
 
   tasks:
