@@ -1,6 +1,9 @@
 ---
 - hosts: localhost
-
+  remote_user: root
+  become: yes
+  become_method: su
+  
   tasks:
     - name: Installs nginx web server
       apt: pkg=nginx state=installed update_cache=true
