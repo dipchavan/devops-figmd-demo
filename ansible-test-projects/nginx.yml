@@ -1,5 +1,8 @@
 ---
 - hosts: localhost
+  remote_user: dipak
+  become: yes
+  become_method: sudo
   
   tasks:
     - name: Installs nginx web server
